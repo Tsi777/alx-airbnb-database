@@ -45,13 +45,5 @@ This document outlines the database schema for the AirBnB system, designed to ma
    - **Foreign Keys:** `sender_id`, `recipient_id` (references `User(user_id)`)
    - **Attributes:** `message_body`, `sent_at`
 
-## Installation and Setup
-1. Ensure you have a SQL database environment set up (e.g., SQL Server, MySQL).
-2. Execute the provided SQL statements in your database management tool (e.g., SSMS, MySQL Workbench).
-3. Verify that all tables and relationships are created successfully.
 
-## Usage
-After setting up the database, you can use it to manage users, properties, bookings, and other functionalities associated with the AirBnB platform.
-
-## License
 This schema is provided for educational purposes. Feel free to modify and use it in your projects.
