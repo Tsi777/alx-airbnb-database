@@ -36,9 +36,11 @@ JOIN
     Property p ON b.property_id = p.property_id
 LEFT JOIN 
     Payment py ON b.booking_id = py.booking_id
+   WHERE 
+    b.start_date >= CURRENT_DATE  -- Only retrieve future bookings
+    AND b.status = 'confirmed'     -- Example condition to filter by booking status 
 ORDER BY 
     b.start_date DESC;
-
 
 EXPLAIN ANALYZE
 -- performance.sql
