@@ -23,3 +23,5 @@ LEFT JOIN
     Booking b ON p.property_id = b.property_id
 GROUP BY 
     p.property_id, p.name;
+ORDER BY 
+    total_bookings DESC;  -- Ordering by total bookings in descending order
